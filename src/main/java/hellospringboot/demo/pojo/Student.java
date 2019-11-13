@@ -11,33 +11,48 @@ public class Student {
     private String sex;
     private Date birthday;
 
-    public Student(Integer id, Integer student_id, String name, Integer age, String sex, Date birthday){
+    public void setId(){
         this.id = id;
-        this.student_id = student_id;
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
-        this.birthday = birthday;
     }
 
     public Integer getId(){
         return id;
     }
 
+    public void setStudentId(){
+        this.student_id = student_id;
+    }
+
     public Integer getStudentId(){
         return student_id;
+    }
+
+    public void setName() {
+        this.name = name;
     }
 
     public String getName(){
         return name;
     }
 
+    public void setAge(){
+        this.age = age;
+    }
+
     public Integer getAge(){
         return age;
     }
 
+    public void setSex(){
+        this.sex = sex;
+    }
+
     public String getSex(){
         return sex;
+    }
+
+    public void setBirthday(){
+        this.birthday = birthday;
     }
 
     public Date getBirthday(){
